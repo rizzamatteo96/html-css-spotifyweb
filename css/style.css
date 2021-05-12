@@ -1,0 +1,37 @@
+.vertical-menu{
+    height: calc(100vh - 100px);
+}
+
+.gallery{
+    height: calc(100vh - 100px);
+}
+
+.action-required,
+footer{
+    height: 100px;
+}
+
+
+
+
+
+
+/* REGOLE PER IL DEBUG INIZIALE - DA CANCELLARE */
+.debug .vertical-menu{
+    background-color: red;
+    border: 1px solid black;
+}
+
+.debug .action-required{
+    background-color: yellow;
+}
+
+.debug .gallery{
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.debug footer,
+.debug header{
+    background-color: grey;
+}

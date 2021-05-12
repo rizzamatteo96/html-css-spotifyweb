@@ -20,6 +20,27 @@
     flex-wrap: wrap;
 }
 
+/* z-index configuration*/
+.zi-100{
+    z-index: 100;
+}
+
+.zi-200{
+    z-index: 200;
+}
+
+.zi-300{
+    z-index: 300;
+}
+
+.zi-400{
+    z-index: 400;
+}
+
+.zi-500{
+    z-index: 500;
+}
+
 [class*="col-"] {
     flex: 0 0 auto;
 } 
