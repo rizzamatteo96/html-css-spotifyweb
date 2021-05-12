@@ -55,3 +55,10 @@ footer{
     background-color: red;
     border: 3px solid yellow;
 }
+
+.debug .box{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border: 3px solid yellow;
+}
