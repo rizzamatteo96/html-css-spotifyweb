@@ -65,12 +65,34 @@
     z-index: 500;
 }
 
+/* margin + padding */
+.mt-10{
+    margin-top: 10px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
 [class*="col-"] {
     flex: 0 0 auto;
 } 
 
 .p-15{
     padding: 15px;
+}
+
+/* OVERFLOW */
+.overflow-auto{
+    overflow: auto;
+}
+
+.overflow-hidden{
+    overflow: hidden;
 }
 
 /* VISUALIZZAZIONE MOBILE < 576px */

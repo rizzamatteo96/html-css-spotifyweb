@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotibool</title>
@@ -14,10 +17,10 @@
     <!-- inizio main section -->
     <main class="row">
         <!-- inizio menu verticale -->
-        <nav class="vertical-menu row col-xs-2 zi-500">
+        <nav class="vertical-menu col-xs-2 overflow-hidden zi-500">
             
             <!-- inizio primo container -->
-            <div class="container-content top-ac-xs">
+            <div class="container-content">
                 <!-- logo + action + playlist -->
 
                 <!-- inizio sezione logo -->
@@ -27,18 +30,49 @@
                 <!-- fine sezione logo -->
 
                 <!-- inizio sezione action -->
-                <div class="menu-action"></div>
+                <div class="menu-action mb-20">
+                    <!-- inizio lista -->
+                    <ul>
+                        <li><a href="#"><img src="img/home.svg" alt="home logo"><span>Home</span></a></li>
+                        <li><a href="#"><img src="img/search.svg" alt="search logo"><span>Cerca</span></a></li>
+                        <li><a href="#"><img src="img/libreria.svg" alt="library logo"><span>La tua libreria</span></a></li>
+                    </ul>
+                    <!-- fine lista -->
+                </div>
                 <!-- fine sezione action -->
 
                 <!-- inizio sezione playlist -->
-                <div class="playlist"></div>
+                <div class="playlist mb-10">
+
+                    <h2 class="mb-10">PLAYLIST</h2>
+                    <div id="add-playlist" class="mb-10">
+                        <i class="fas fa-plus-square"></i>
+                        <span>Crea playlist</span>
+                    </div>
+
+                    <!-- inizio lista playlist -->
+                    <div id="test">
+
+                        <ul>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                        </ul>
+                    </div>
+                    <!-- fine lista playlist -->
+
+                </div>
                 <!-- fine sezione playlist -->
 
             </div>
             <!-- fine primo container -->
 
             <!-- inizio secondo container -->
-            <div class="container-content bottom-ac-xs">
+            <div class="container-content">
                 <!-- inizio sezione bottom -->
                 <div class="bottom"></div>
                 <!-- fine sezione bottom -->
@@ -57,7 +91,7 @@
             <!-- fine azione richiesta - upload -->
 
             <!-- inizio main gallery -->
-            <section class="gallery">
+            <section class="gallery overflow-auto">
 
                 <!-- inizio menu navigazione -->
                 <section>

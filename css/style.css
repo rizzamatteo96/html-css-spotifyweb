@@ -1,25 +1,65 @@
+/* COMMONS */
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
 /* vertical menu - left side */
 .vertical-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: calc(100vh - 100px);
     background-color: black;
     min-width: 250px;
+    font-size: 15px;
 }
 
 .vertical-menu .container-content > *{
     width: 100%;
 }
 
+/* LOGO */
 #logo{
-    height: 100px;
-    padding-top: 20px;
+    padding: 25px 0;
 }
 
 #logo img{
-    width: 80%;
+    width: 65%;
 }
 
+/* MENU ACTION */
+.menu-action ul li a img{
+    height: 30px;
+    vertical-align: middle;
+    margin: 0 5px 10px 0;
+}
 
+/* PLAYLIST */
+#add-playlist i{
+    font-size: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
+#test{
+    /* max-height: 200px; */
+    min-height: 120px;
+    overflow-y: auto;
+}
 
 
 
@@ -33,7 +73,6 @@
     background-color: #141922;
     padding-top: 120px;
     color: white;
-    overflow-y: auto;
 }
 
 .action-required,
@@ -75,8 +114,8 @@ footer .col-xs-2{
 } */
 
 /* .debug .logo, */
-.debug .menu-action,
-.debug .playlist,
+/* .debug .menu-action, */
+/* .debug .playlist, */
 .debug .bottom{
     height: 100px;
     background-color: red;
