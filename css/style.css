@@ -1,6 +1,7 @@
 .vertical-menu{
     height: calc(100vh - 100px);
     background-color: black;
+    min-width: 250px;
 }
 
 .action-required{
@@ -10,6 +11,9 @@
 .gallery{
     height: calc(100vh - 100px);
     background-color: #141922;
+    padding-top: 120px;
+    color: white;
+    overflow-y: auto;
 }
 
 .action-required,
@@ -20,6 +24,10 @@ footer{
 
 footer{
     background-color: #282828;
+}
+
+footer .col-xs-2{
+    min-width: 250px;
 }
 
 
@@ -57,7 +65,7 @@ footer{
 }
 
 .debug .box{
-    height: 100%;
+    height: 100px;
     width: 100%;
     background-color: red;
     border: 3px solid yellow;
