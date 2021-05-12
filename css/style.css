@@ -45,3 +45,13 @@ footer{
 /* .debug footer{
     background-color: grey;
 } */
+
+.debug .logo,
+.debug .menu-action,
+.debug .playlist,
+.debug .bottom{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    border: 3px solid yellow;
+}
