@@ -1,9 +1,29 @@
+/* vertical menu - left side */
 .vertical-menu{
     height: calc(100vh - 100px);
     background-color: black;
     min-width: 250px;
 }
 
+.vertical-menu .container-content > *{
+    width: 100%;
+}
+
+#logo{
+    height: 100px;
+    padding-top: 20px;
+}
+
+#logo img{
+    width: 80%;
+}
+
+
+
+
+
+
+/* main part - right side */
 .action-required{
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -54,12 +74,11 @@ footer .col-xs-2{
     background-color: grey;
 } */
 
-.debug .logo,
+/* .debug .logo, */
 .debug .menu-action,
 .debug .playlist,
 .debug .bottom{
     height: 100px;
-    width: 100%;
     background-color: red;
     border: 3px solid yellow;
 }
