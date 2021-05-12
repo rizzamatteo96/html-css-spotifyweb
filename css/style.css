@@ -1,14 +1,25 @@
 .vertical-menu{
     height: calc(100vh - 100px);
+    background-color: black;
+}
+
+.action-required{
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .gallery{
     height: calc(100vh - 100px);
+    background-color: #141922;
 }
 
 .action-required,
 footer{
     height: 100px;
+    width: 100%;
+}
+
+footer{
+    background-color: #282828;
 }
 
 
@@ -17,21 +28,20 @@ footer{
 
 
 /* REGOLE PER IL DEBUG INIZIALE - DA CANCELLARE */
-.debug .vertical-menu{
+/* .debug .vertical-menu{
     background-color: red;
     border: 1px solid black;
-}
+} */
 
-.debug .action-required{
+/* .debug .action-required{
     background-color: yellow;
-}
+} */
 
-.debug .gallery{
+/* .debug .gallery{
     background-color: blue;
     border: 1px solid black;
-}
+} */
 
-.debug footer,
-.debug header{
+/* .debug footer{
     background-color: grey;
-}
+} */

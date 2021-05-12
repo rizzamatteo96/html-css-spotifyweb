@@ -20,6 +20,23 @@
     flex-wrap: wrap;
 }
 
+
+/* position configuration */
+.pos-rel{
+    position: relative;
+}
+
+.pos-fix{
+    position: fixed;
+}
+
+.pos-frt{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
 /* z-index configuration*/
 .zi-100{
     z-index: 100;
