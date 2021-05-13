@@ -93,8 +93,21 @@ body{
 .gallery-container{
     height: calc(100vh - 100px);
 }
+
+/* ACTION REQUIRED */
 .action-required{
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.action-required .btn{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-transform: uppercase;
 }
 
 .gallery{
