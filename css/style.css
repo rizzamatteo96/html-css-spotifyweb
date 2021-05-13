@@ -14,6 +14,7 @@ h2{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     color: white;
 }
 
@@ -89,9 +90,19 @@ body{
 }
 
 
-/* main part - right side */
+/*--- MAIN PART - RIGHT SIDE ---*/
 .gallery-container{
     height: calc(100vh - 100px);
+}
+
+.gallery section{
+    margin: 20px 0;
+}
+
+.gallery section ul li a{
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 15px;
 }
 
 /* ACTION REQUIRED */
