@@ -20,6 +20,10 @@
     flex-wrap: wrap;
 }
 
+[class*="col-"] {
+    flex: 0 0 auto;
+} 
+
 
 /* position configuration */
 .pos-rel{
@@ -63,6 +67,10 @@
     margin-top: 10px;
 }
 
+.mt-20{
+    margin-top: 20px;
+}
+
 .mb-10{
     margin-bottom: 10px;
 }
@@ -71,9 +79,9 @@
     margin-bottom: 20px;
 }
 
-[class*="col-"] {
-    flex: 0 0 auto;
-} 
+.ml-5{
+    margin-left: 5px;
+}
 
 .p-15{
     padding: 15px;
@@ -81,11 +89,11 @@
 
 /* OVERFLOW */
 .overflow-auto{
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .overflow-hidden{
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 /* VISUALIZZAZIONE MOBILE < 576px */

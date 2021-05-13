@@ -14,140 +14,157 @@
 </head>
 <body class="debug">
     
-    <!-- inizio main section -->
-    <main class="row">
-        <!-- inizio menu verticale -->
-        <aside class="vertical-menu col-xs-2 overflow-hidden zi-500">
-            
-            <!-- inizio primo container -->
-            <nav class="side-container first">
-                <!-- logo + action + playlist -->
-
-                <!-- inizio sezione logo -->
-                <div id="logo">
-                    <img src="img/logo.svg" alt="spotify logo">
-                </div>
-                <!-- fine sezione logo -->
-
-                <!-- inizio sezione action -->
-                <div class="menu-action mb-20">
-                    <!-- inizio lista -->
-                    <ul>
-                        <li><a href="#"><img src="img/home.svg" alt="home logo"><span>Home</span></a></li>
-                        <li><a href="#"><img src="img/search.svg" alt="search logo"><span>Cerca</span></a></li>
-                        <li><a href="#"><img src="img/libreria.svg" alt="library logo"><span>La tua libreria</span></a></li>
-                    </ul>
-                    <!-- fine lista -->
-                </div>
-                <!-- fine sezione action -->
-
-                <!-- inizio sezione playlist -->
-                <div class="playlist mb-10">
-                    <h2 class="mb-10">PLAYLIST</h2>
-                    <div id="add-playlist" class="mb-10">
-                        <i class="fas fa-plus-square"></i>
-                        <span>Crea playlist</span>
+    <!-- inizio container principale -->
+    <div class="container-fluid overflow-hidden">
+        <!-- inizio main section -->
+        <main class="row overflow-hidden">
+            <!-- inizio menu verticale -->
+            <aside class="vertical-menu col-xs-2 overflow-hidden zi-500">
+                
+                <!-- inizio primo container -->
+                <nav class="side-container top">
+                    <!-- logo + action + playlist -->
+    
+                    <!-- inizio sezione logo -->
+                    <div id="logo">
+                        <img src="img/logo.svg" alt="spotify logo">
                     </div>
+                    <!-- fine sezione logo -->
+    
+                    <!-- inizio sezione action -->
+                    <div class="menu-action mb-20">
+                        <!-- inizio lista -->
+                        <ul>
+                            <li><a href="#"><img src="img/home.svg" alt="home logo"><span>Home</span></a></li>
+                            <li><a href="#"><img src="img/search.svg" alt="search logo"><span>Cerca</span></a></li>
+                            <li><a href="#"><img src="img/libreria.svg" alt="library logo"><span>La tua libreria</span></a></li>
+                        </ul>
+                        <!-- fine lista -->
+                    </div>
+                    <!-- fine sezione action -->
+    
+                    <!-- inizio sezione playlist -->
+                    <div class="playlist mb-10">
+                        <h2 class="mb-10">PLAYLIST</h2>
+                        <div id="add-playlist" class="mb-10">
+                            <i class="fas fa-plus-square"></i>
+                            <span>Crea playlist</span>
+                        </div>
+                    </div>
+    
+                    <!-- inizio lista playlist -->
+                    <div id="list-playlist">
+                        <ul>
+                            <li class="mb-10"><a href="#">Prima playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Nome playlist</a></li>
+                            <li class="mb-10"><a href="#">Ultima playlist</a></li>
+                        </ul>
+                    </div>
+                    <!-- fine lista playlist -->
+                    <!-- fine sezione playlist -->
+    
+                </nav>
+                <!-- fine primo container -->
+    
+                <!-- inizio secondo container -->
+                <div class="side-container bottom mt-10 mb-10">
+                    <!-- inizio sezione bottom -->
+
+                    <div>
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <span class="ml-5">Installa app</span>
+                    </div>
+
+                    <hr class="mt-20 mb-20">
+
+                    <div>
+                        <img class="user-img" src="img/profile.svg" alt="profile logo avatar">
+                        <span class="ml-5">John Doe</span>
+                    </div>
+
+
+                    <!-- fine sezione bottom -->
                 </div>
-
-                <!-- inizio lista playlist -->
-                <div id="list-playlist">
-                    <ul>
-                        <li class="mb-10"><a href="#">AAAAAAAAAAAAA</a></li>
-                        <li class="mb-10"><a href="#">Nome playlist</a></li>
-                        <li class="mb-10"><a href="#">Nome playlist</a></li>
-                        <li class="mb-10"><a href="#">Nome playlist</a></li>
-                        <li class="mb-10"><a href="#">Nome playlist</a></li>
-                        <li class="mb-10"><a href="#">Nome playlist</a></li>
-                        <li class="mb-10"><a href="#">ZZZZZZZZZZZZZ</a></li>
-                    </ul>
-                </div>
-                <!-- fine lista playlist -->
-                <!-- fine sezione playlist -->
-
-            </nav>
-            <!-- fine primo container -->
-
-            <!-- inizio secondo container -->
-            <div class="side-container second">
-                <!-- inizio sezione bottom -->
-                <div class="bottom"></div>
-                <!-- fine sezione bottom -->
-            </div>
-            <!-- fine secondo container -->
-
-        </aside>
-        <!-- fine menu verticale -->
-
-        <!-- inizio gallery + action required -->
-        <section class="col-xs">
-            
-            <!-- inizio azione richiesta - upload -->
-            <section class="action-required pos-frt zi-100">
+                <!-- fine secondo container -->
+    
+            </aside>
+            <!-- fine menu verticale -->
+    
+            <!-- inizio gallery + action required -->
+            <section class="col-xs gallery-container">
+                
+                <!-- inizio azione richiesta - upload -->
+                <section class="action-required pos-frt zi-100">
+                </section>
+                <!-- fine azione richiesta - upload -->
+    
+                <!-- inizio main gallery -->
+                <section class="gallery overflow-auto">
+    
+                    <!-- inizio menu navigazione -->
+                    <section>
+                        <div class="row">
+                            <div class="box"></div>
+                        </div>
+                    </section>
+                    <!-- fine menu navigazione -->
+    
+                    <!-- inizio recently played -->
+                    <section>
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <div class="row">
+                            <div class="col-xs-2"><div class="box"></div></div>
+                            <div class="col-xs-2"><div class="box"></div></div>
+                            <div class="col-xs-2"><div class="box"></div></div>
+                            <div class="col-xs-2"><div class="box"></div></div>
+                            <div class="col-xs-2"><div class="box"></div></div>
+                            <div class="col-xs-2"><div class="box"></div></div>
+                        </div>
+                    </section>
+                    <!-- fine recently played -->
+    
+                    <!-- inizio "create per john doe" -->
+                    <section>
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <div class="row">
+                            <div class="col-xs-2"><div class="box"></div></div>
+                            <div class="col-xs-2"><div class="box"></div></div>
+                        </div>
+                    </section>
+                    <!-- fine "create per john doe" -->
+    
+                    <!-- inizio artisti più popolari -->
+                    <section>
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <div class="row">
+                            <div class="col-xs-2"><div class="box"></div></div>
+                            <div class="col-xs-2"><div class="box"></div></div>
+                        </div>
+                    </section>
+                    <!-- fine artisti più popolari -->
+    
+                </section>
+                <!-- fine main gallery -->
+    
             </section>
-            <!-- fine azione richiesta - upload -->
-
-            <!-- inizio main gallery -->
-            <section class="gallery overflow-auto">
-
-                <!-- inizio menu navigazione -->
-                <section>
-                    <div class="row">
-                        <div class="box"></div>
-                    </div>
-                </section>
-                <!-- fine menu navigazione -->
-
-                <!-- inizio recently played -->
-                <section>
-                    <h2>Lorem ipsum dolor sit.</h2>
-                    <div class="row">
-                        <div class="col-xs-2"><div class="box"></div></div>
-                        <div class="col-xs-2"><div class="box"></div></div>
-                        <div class="col-xs-2"><div class="box"></div></div>
-                        <div class="col-xs-2"><div class="box"></div></div>
-                        <div class="col-xs-2"><div class="box"></div></div>
-                        <div class="col-xs-2"><div class="box"></div></div>
-                    </div>
-                </section>
-                <!-- fine recently played -->
-
-                <!-- inizio "create per john doe" -->
-                <section>
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <div class="row">
-                        <div class="col-xs-2"><div class="box"></div></div>
-                        <div class="col-xs-2"><div class="box"></div></div>
-                    </div>
-                </section>
-                <!-- fine "create per john doe" -->
-
-                <!-- inizio artisti più popolari -->
-                <section>
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <div class="row">
-                        <div class="col-xs-2"><div class="box"></div></div>
-                        <div class="col-xs-2"><div class="box"></div></div>
-                    </div>
-                </section>
-                <!-- fine artisti più popolari -->
-
-            </section>
-            <!-- fine main gallery -->
-
-        </section>
-        <!-- fine gallery + action required -->
-
-    </main>
-    <!-- fine main section -->
-
-    <!-- inizio footer -->
-    <footer class="row">
-        <div class="col-xs-2"><div class="box"></div></div>
-        <div class="col-xs"><div class="box"></div></div>
-        <div class="col-xs-2"><div class="box"></div></div>
-    </footer>
-    <!-- fine footer -->
+            <!-- fine gallery + action required -->
+    
+        </main>
+        <!-- fine main section -->
+    
+        <!-- inizio footer -->
+        <footer class="row">
+            <div class="col-xs-2"><div class="box"></div></div>
+            <div class="col-xs"><div class="box"></div></div>
+            <div class="col-xs-2"><div class="box"></div></div>
+        </footer>
+        <!-- fine footer -->
+    </div>
+    <!-- fine container principale -->
 
 </body>
 </html>
