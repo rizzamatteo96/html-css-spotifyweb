@@ -15,9 +15,17 @@ h2{
 body{
     font-family: 'Montserrat', sans-serif;
     color: white;
+    overflow-y: hidden;
 }
 
 /* vertical menu - left side */
+.side-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}
+
 .vertical-menu{
     display: flex;
     flex-direction: column;
@@ -28,7 +36,18 @@ body{
     font-size: 15px;
 }
 
-.vertical-menu .container-content > *{
+.side-container.first {
+    flex-shrink: 1;
+    min-height: 450px;
+    align-content: flex-start;
+}
+
+.side-container.second{
+    flex-shrink: 1;
+    height: 100px;
+}
+
+.vertical-menu .side-container > *{
     width: 100%;
 }
 
@@ -55,7 +74,7 @@ body{
     margin-right: 5px;
 }
 
-#test{
+#list-playlist{
     /* max-height: 200px; */
     min-height: 120px;
     overflow-y: auto;
