@@ -135,6 +135,7 @@ body{
 .gallery .box{
     max-width: 200px;
     text-align: center;
+    margin-right: 10px;
 }
 
 .gallery .box img{
@@ -145,11 +146,6 @@ body{
 .gallery .box img.round{
     border-radius: 50%;
 }
-
-
-
-
-
 
 /* FOOTER */
 footer{
@@ -162,6 +158,19 @@ footer{
 
 footer .col-xs-2{
     min-width: 250px;
+    padding: 0 10px;
+}
+
+footer .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#now-play{
+    width: 50px;
+    margin-right: 10px;
 }
 
 
