@@ -8,7 +8,7 @@ ul li a{
     color: white;
 }
 
-h2{
+h6{
     font-size: 15px;
 }
 
@@ -18,7 +18,7 @@ body{
     color: white;
 }
 
-/* vertical menu - left side */
+/*--- VERTICAL MENU - LEFT SIDE ---*/
 .side-container{
     display: flex;
     flex-direction: column;
@@ -95,6 +95,7 @@ body{
     height: calc(100vh - 100px);
 }
 
+
 .gallery section{
     margin: 20px 0;
 }
@@ -108,6 +109,8 @@ body{
 /* ACTION REQUIRED */
 .action-required{
     background-color: rgba(0, 0, 0, 0.3);
+    height: 100px;
+    width: calc(100% - 250px);
 }
 
 .action-required .btn{
@@ -121,22 +124,39 @@ body{
     text-transform: uppercase;
 }
 
+/* GALLERY */
 .gallery{
     height: 100%;
     background-color: #141922;
-    padding-top: 100px;
+    padding: 100px 20px 0;
     color: white;
 }
 
-.action-required,
-footer{
-    height: 100px;
-    width: 100%;
+.gallery .box{
+    max-width: 200px;
+    text-align: center;
 }
 
+.gallery .box img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gallery .box img.round{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/* FOOTER */
 footer{
     position: relative;
     z-index: 999;
+    height: 100px;
+    width: 100%;
     background-color: #282828;
 }
 
@@ -177,9 +197,9 @@ footer .col-xs-2{
     border: 3px solid yellow;
 } */
 
-.debug .box{
+/* .debug .box{
     height: 100px;
     width: 100%;
     background-color: red;
     border: 3px solid yellow;
-}
+} */
