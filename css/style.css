@@ -8,9 +8,19 @@ ul li a{
     color: #7f7f7f;
 }
 
+ul li a:hover{
+    color: white;
+}
+
+i:hover,
+.range-bar:hover{
+    cursor: pointer;
+}
+
 h6{
     font-size: 15px;
 }
+
 
 /* white text */
 h1, h2, h3, h4, h5, h6,
@@ -88,7 +98,9 @@ span{
     filter: brightness(50%);
 }
 
-.menu-action ul li.active a > *{
+.menu-action ul li.active a > *,
+.menu-action ul li:not(.active):hover a > *
+{
     filter: brightness(100%);
     color: white;
 }
@@ -115,6 +127,12 @@ span{
     font-size: 50px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+#add-playlist:hover > *,
+#download-btn:hover > *{
+    cursor: pointer;
+    color: white;
 }
 
 #list-playlist{
@@ -164,6 +182,12 @@ span{
     border: 2px solid white;
     border-radius: 50px;
     text-transform: uppercase;
+}
+
+.action-required .btn:hover{
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* GALLERY */
@@ -227,14 +251,6 @@ span{
 }
 
 
-
-
-
-
-
-
-
-
 /* FOOTER */
 footer{
     position: relative;
@@ -274,6 +290,10 @@ footer .left i{
     color: #7f7f7f;
 }
 
+footer .left i:hover{
+    color: white;
+}
+
 footer .center .box{
     width: 100%;
     justify-content: center;
@@ -286,6 +306,11 @@ footer .center .box{
 
 #play-btn{
     font-size: 40px;
+}
+
+#play-btn:hover{
+    font-size: 50px;
+    margin-top: 10px;
 }
 
 .range-bar{
