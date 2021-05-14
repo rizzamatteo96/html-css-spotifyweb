@@ -35,7 +35,7 @@
                     <div class="menu-action mb-20">
                         <!-- inizio lista -->
                         <ul>
-                            <li><a href="#"><img src="img/home.svg" alt="home logo"><span>Home</span></a></li>
+                            <li class="active"><a href="#"><img src="img/home.svg" alt="home logo"><span>Home</span></a></li>
                             <li><a href="#"><img src="img/search.svg" alt="search logo"><span>Cerca</span></a></li>
                             <li><a href="#"><img src="img/libreria.svg" alt="library logo"><span>La tua libreria</span></a></li>
                         </ul>
@@ -83,7 +83,7 @@
 
                     <div>
                         <img class="user-img" src="img/profile.svg" alt="profile logo avatar">
-                        <span class="ml-5">John Doe</span>
+                        <span class="wh-txt ml-5">John Doe</span>
                     </div>
 
 
@@ -99,7 +99,7 @@
                 
                 <!-- inizio azione richiesta - upload -->
                 <section class="action-required pos-frt zi-100">
-                    <div class="btn">effettua l'upgrade</div>
+                    <div class="btn wh-txt">effettua l'upgrade</div>
                 </section>
                 <!-- fine azione richiesta - upload -->
     
@@ -121,8 +121,8 @@
     
                     <!-- inizio recently played -->
                     <section>
-                        <h2 class="mb-20">Recently played</h2>
-                        <div class="row">
+                        <h2>Recently played</h2>
+                        <div class="row mt-20">
 
                             <!-- inizio prima box -->
                             <div class="col-xs-2">
@@ -191,8 +191,8 @@
                     <!-- inizio "create per john doe" -->
                     <section>
                         <h2 class="mb-10">Creato per John Doe</h2>
-                        <div class="mb-20">Più ascolti, più accurati saranno i suggerimenti.</div>
-                        <div class="row">
+                        <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                        <div class="row mt-20">
 
                             <!-- inizio prima box -->
                             <div class="col-xs-2">
@@ -219,8 +219,8 @@
                     <!-- inizio artisti più popolari -->
                     <section>
                         <h2 class="mb-10">Artisti più popolari</h2>
-                        <div class="mb-20">Più ascolti, più accurati saranno i suggerimenti.</div>
-                        <div class="row">
+                        <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                        <div class="row mt-20">
 
                             <!-- inizio prima box -->
                             <div class="col-xs-2">
@@ -262,7 +262,7 @@
                     <div class="box">
                         <img src="img/sinister.jpeg" alt="sinister cover" id="now-play">
                         <div>
-                            <div>Sinister</div>
+                            <div class="wh-txt">Sinister</div>
                             <span>Brano nome</span>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                     <div class="box commands">
                         <i class="fas fa-random"></i>
                         <i class="fas fa-step-backward"></i>
-                        <i class="far fa-play-circle"></i>
+                        <i id="play-btn" class="far fa-play-circle"></i>
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo-alt"></i>
                     </div>
@@ -293,11 +293,11 @@
 
                     <!-- inizio sezione tempo riproduzione -->
                     <div class="box play-time">
-                        <span>0:25</span>
+                        <span class="wh-txt">0:25</span>
                         <div class="range-bar">
                             <div class="active-range"></div>
                         </div>
-                        <span>4:35</span>
+                        <span class="wh-txt">4:35</span>
                     </div>
                     <!-- fine sezione tempo riproduzione -->
                 </div>

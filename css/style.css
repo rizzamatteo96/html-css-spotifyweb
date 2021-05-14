@@ -12,9 +12,21 @@ h6{
     font-size: 15px;
 }
 
+/* white text */
+h1, h2, h3, h4, h5, h6,
+.wh-txt,
+footer .center i,
+footer .right i{
+    color: white;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    color: #7f7f7f;
+}
+
+span{
     color: #7f7f7f;
 }
 
@@ -23,7 +35,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 10px;
 }
 
 .vertical-menu{
@@ -49,6 +60,7 @@ body{
 
 .vertical-menu .side-container > *{
     width: 100%;
+    padding: 0 10px;
 }
 
 /* LOGO */
@@ -61,11 +73,47 @@ body{
 }
 
 /* MENU ACTION */
+.vertical-menu .side-container .menu-action{
+    padding: 0;
+}
+
+.menu-action ul li{
+    padding: 0 10px;
+}
+
 .menu-action ul li a img{
     height: 30px;
     vertical-align: middle;
     margin: 0 5px 10px 0;
+    filter: brightness(50%);
 }
+
+.menu-action ul li.active a > *{
+    filter: brightness(100%);
+    color: white;
+}
+
+/* inizio trattino per classe attiva nel menu */
+.menu-action ul li.active{
+    position: relative;
+    border-left: 3px solid #adff2f;
+}
+
+.menu-action ul li.active::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    content: '';
+    background-color: #adff2f;
+}
+/* fine trattino per classe attiva nel menu */
+
+
+
+
+
 
 /* PLAYLIST */
 #add-playlist i{
@@ -196,7 +244,7 @@ footer .center .box{
     font-size: 20px;
 }
 
-.commands i:nth-child(3){
+#play-btn{
     font-size: 40px;
 }
 
