@@ -5,7 +5,7 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color: white;
+    color: #7f7f7f;
 }
 
 h6{
@@ -15,7 +15,7 @@ h6{
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: white;
+    color: #7f7f7f;
 }
 
 /*--- VERTICAL MENU - LEFT SIDE ---*/
@@ -171,6 +171,48 @@ footer .box{
 #now-play{
     width: 50px;
     margin-right: 10px;
+}
+
+footer .box div{
+    font-size: 15px;
+}
+
+footer .box span{
+    font-size: 10px;
+}
+
+footer .left i{
+    margin-right: 10px;
+    color: #7f7f7f;
+}
+
+footer .center .box{
+    width: 100%;
+    justify-content: center;
+}
+
+.commands > i{
+    margin: 15px 10px 0;
+    font-size: 20px;
+}
+
+.commands i:nth-child(3){
+    font-size: 40px;
+}
+
+.range-bar{
+    width: 50%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #5a5a5a;
+    margin: 0 10px;
+}
+
+.active-range{
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #c1c1c1;
 }
 
 

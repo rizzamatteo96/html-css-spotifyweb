@@ -20,6 +20,10 @@
     flex-wrap: wrap;
 }
 
+.fl-column{
+    flex-direction: column;
+}
+
 [class*="col-"] {
     flex: 0 0 auto;
 } 
@@ -81,6 +85,10 @@
 
 .ml-5{
     margin-left: 5px;
+}
+
+.ml-15{
+    margin-left: 15px;
 }
 
 .p-15{
