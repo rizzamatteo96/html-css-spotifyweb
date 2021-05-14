@@ -260,7 +260,8 @@ footer{
     background-color: #282828;
 }
 
-footer .col-xs-2{
+footer .left,
+footer .right{
     min-width: 250px;
     padding: 0 10px;
 }
