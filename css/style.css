@@ -155,10 +155,6 @@ span{
     display: none;
 }
 
-#download-btn{
-    margin-bottom: 5px;
-}
-
 /* BOTTOM LEFT */
 .side-container.bottom div img{
     height: 30px;
@@ -176,6 +172,10 @@ span{
 .side-container.bottom{
     justify-content: flex-end;
     align-items: center;
+}
+
+#download-btn{
+    margin-bottom: 5px;
 }
 
 
@@ -363,36 +363,12 @@ footer .center .box{
 @media screen and (min-width:576px) {
 
     /*--- VERTICAL MENU - LEFT SIDE ---*/
-    .side-container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
     .vertical-menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: calc(100vh - 100px);
-        background-color: black;
         min-width: 250px;
-        font-size: 15px;
-    }
-
-    .side-container.top {
-        flex-shrink: 1;
-        min-height: 450px;
-        align-content: flex-start;
-    }
-
-    .side-container.bottom{
-        flex-shrink: 1;
-        height: 100px;
     }
 
     .vertical-menu .side-container > *{
         width: 100%;
-        padding: 0 10px;
     }
 
     /* LOGO */
@@ -400,67 +376,24 @@ footer .center .box{
         padding: 25px 10px;
     }
 
-    #logo img{
+    #logo img.big{
+        display: inline-block;
         width: 65%;
     }
 
+    #logo img.small{
+        display: none;
+    }
+    
     /* MENU ACTION */
-    .vertical-menu .side-container .menu-action{
-        padding: 0;
+    .menu-action ul li a span{
+        display: inline;
     }
-
-    .menu-action ul li{
-        padding: 0 10px;
-    }
-
-    .menu-action ul li a img{
-        height: 30px;
-        vertical-align: middle;
-        margin: 0 5px 10px 0;
-        filter: brightness(50%);
-    }
-
-    .menu-action ul li.active a > *,
-    .menu-action ul li:not(.active):hover a > *
-    {
-        filter: brightness(100%);
-        color: white;
-    }
-
-    /* inizio trattino per classe attiva nel menu */
-    .vertical-menu .menu-action ul li.active{
-        position: relative;
-    }
-
-    .vertical-menu .menu-action ul li.active::before{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 2px;
-        content: '';
-        background-color: #adff2f;
-    }
-    /* fine trattino per classe attiva nel menu */
-
 
     /* PLAYLIST */
-    #add-playlist i{
-        font-size: 50px;
-        vertical-align: middle;
-        margin-right: 5px;
-    }
-
-    #add-playlist:hover > *,
-    #download-btn:hover > *{
-        cursor: pointer;
-        color: white;
-    }
-
+    .playlist,
     #list-playlist{
-        /* max-height: 200px; */
-        min-height: 120px;
-        overflow-y: auto;
+        display: block;
     }
 
     /* BOTTOM LEFT */
@@ -472,105 +405,24 @@ footer .center .box{
         vertical-align: middle;
     }
 
-
-    /*--- MAIN PART - RIGHT SIDE ---*/
-    .gallery-container{
-        height: calc(100vh - 100px);
+    .side-container.bottom span{
+        display: inline-block;
     }
-
-    .gallery section{
-        margin: 20px 0;
-    }
-
-    .gallery section ul li a{
-        text-transform: uppercase;
-        margin: 0 10px;
-        font-size: 15px;
-    }
-
-    /* ACTION REQUIRED */
-    .action-required{
-        background-color: rgba(0, 0, 0, 0.3);
-        height: 100px;
-        width: calc(100% - 250px);
-    }
-
-    .action-required .btn{
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 10px 25px;
-        border: 2px solid white;
-        border-radius: 50px;
-        text-transform: uppercase;
-    }
-
-    .action-required .btn:hover{
-        right: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    /* GALLERY */
-    .gallery{
-        height: 100%;
-        background-color: #141922;
-        padding: 100px 20px 0;
-        color: white;
-    }
-
-    /* inizio trattino per classe attiva nel menu */
-    .gallery-container .gallery ul li.active{
-        position: relative;
-        padding-bottom: 5px;
-    }
-
-    .gallery-container .gallery ul li.active::before{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 2px;
-        width: 20%;
-        content: '';
-        background-color: #adff2f;
-        padding-top: 2px;
-    }
-    /* fine trattino per classe attiva nel menu */
-
-    .gallery .box{
-        max-width: 200px;
-        text-align: center;
-        margin-right: 10px;
-    }
-
-    .gallery .box img{
-        width: 100%;
+    .side-container.bottom hr{
         display: block;
     }
 
-    .gallery .box img.round{
-        border-radius: 50%;
+    #download-btn{
+        margin-bottom: 0;
     }
 
 
-    .layover{
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        font-size: 70px;
-    }
 
-    .img-container:hover .layover{
-        display: flex;
-        cursor: pointer;
+    /*--- MAIN PART - RIGHT SIDE ---*/
+
+    /* ACTION REQUIRED */
+    .action-required{
+        width: calc(100% - 250px);
     }
 
 
