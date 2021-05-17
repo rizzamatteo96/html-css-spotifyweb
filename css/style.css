@@ -420,10 +420,7 @@ footer .center .box{
         margin-bottom: 0;
     }
 
-
-
     /*--- MAIN PART - RIGHT SIDE ---*/
-
     /* ACTION REQUIRED */
     .action-required{
         width: calc(100% - 250px);
@@ -439,16 +436,8 @@ footer .center .box{
         padding: 0 10px;
     }
 
-    footer .box{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-    }
-
     #now-play{
         width: 50px;
-        margin-right: 10px;
     }
 
     footer .box div,
@@ -462,12 +451,6 @@ footer .center .box{
 
     footer .left i{
         margin: 0 10px 0 0;
-        color: #7f7f7f;
-    }
-
-    footer .center .box{
-        width: 100%;
-        justify-content: center;
     }
 
     footer .box.commands > i{
@@ -490,16 +473,5 @@ footer .center .box{
 
     .range-bar{
         width: 70%;
-        height: 4px;
-        border-radius: 10px;
-        background-color: #5a5a5a;
-        margin: 0 10px;
-    }
-
-    .active-range{
-        height: 100%;
-        width: 20%;
-        border-radius: 10px;
-        background-color: #c1c1c1;
     }
 }
