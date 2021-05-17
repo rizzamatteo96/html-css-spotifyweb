@@ -356,10 +356,32 @@ footer .center .box{
 }
 
 .active-range{
+    position: relative;
     height: 100%;
     width: 20%;
     border-radius: 10px;
     background-color: #c1c1c1;
+}
+
+.active-range::after{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+}
+
+.range-bar:hover .active-range{
+    background-color: #adff2f;
+}
+
+.range-bar:hover .active-range::after{
+    display: block;
 }
 
 
@@ -473,5 +495,10 @@ footer .center .box{
 
     .range-bar{
         width: 70%;
+    }
+
+    .active-range::after{
+        width: 15px;
+        height: 15px;
     }
 }
