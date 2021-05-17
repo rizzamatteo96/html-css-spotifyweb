@@ -291,7 +291,6 @@ footer{
 
 footer .left,
 footer .right{
-    min-width: 250px;
     padding: 0 10px;
 }
 
@@ -303,25 +302,30 @@ footer .box{
 }
 
 #now-play{
-    width: 50px;
+    width: 30px;
     margin-right: 10px;
 }
 
-footer .box div{
-    font-size: 15px;
-}
-
-footer .box span{
+footer .box div,
+footer .box span,
+footer .box i{
     font-size: 10px;
 }
 
 footer .left i{
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
     color: #7f7f7f;
 }
 
 footer .left i:hover{
     color: white;
+}
+
+footer .left .box.favourite{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10px;
 }
 
 footer .center .box{
@@ -330,17 +334,17 @@ footer .center .box{
 }
 
 .commands > i{
-    margin: 15px 10px 0;
-    font-size: 20px;
+    margin: 15px 5px 0;
+    font-size: 10px;
 }
 
 #play-btn{
-    font-size: 40px;
+    font-size: 20px;
 }
 
 #play-btn:hover{
-    font-size: 50px;
-    margin-top: 10px;
+    font-size: 25px;
+    margin: 10px 3px 0;
 }
 
 .range-bar{
@@ -425,16 +429,10 @@ footer .center .box{
         width: calc(100% - 250px);
     }
 
+}
 
+@media screen and (min-width:760px) {
     /* FOOTER */
-    footer{
-        position: relative;
-        z-index: 999;
-        height: 100px;
-        width: 100%;
-        background-color: #282828;
-    }
-
     footer .left,
     footer .right{
         min-width: 250px;
@@ -453,7 +451,8 @@ footer .center .box{
         margin-right: 10px;
     }
 
-    footer .box div{
+    footer .box div,
+    footer .box i{
         font-size: 15px;
     }
 
@@ -462,12 +461,8 @@ footer .center .box{
     }
 
     footer .left i{
-        margin-right: 10px;
+        margin: 0 10px 0 0;
         color: #7f7f7f;
-    }
-
-    footer .left i:hover{
-        color: white;
     }
 
     footer .center .box{
@@ -475,7 +470,7 @@ footer .center .box{
         justify-content: center;
     }
 
-    .commands > i{
+    footer .box.commands > i{
         margin: 15px 10px 0;
         font-size: 20px;
     }
@@ -485,12 +480,16 @@ footer .center .box{
     }
 
     #play-btn:hover{
-        font-size: 50px;
-        margin-top: 10px;
+        font-size: 45px;
+        margin: 10px 8px 0;
+    }
+
+    footer .right i:nth-child(2){
+        margin: 0 5px;
     }
 
     .range-bar{
-        width: 50%;
+        width: 70%;
         height: 4px;
         border-radius: 10px;
         background-color: #5a5a5a;
@@ -503,5 +502,4 @@ footer .center .box{
         border-radius: 10px;
         background-color: #c1c1c1;
     }
-
 }
